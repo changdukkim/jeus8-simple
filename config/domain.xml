@@ -113,7 +113,7 @@
         </deployed-application>
         <deployed-application>
             <id>simple</id>
-            <path>/home/tmax/app/ROOT.war</path>
+            <path>/home/tmax/app/simple.war</path>
             <type>WAR</type>
             <target-all-servers>true</target-all-servers>
             <classloading>ISOLATED</classloading>
