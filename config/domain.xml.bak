@@ -2,7 +2,7 @@
 <domain xmlns="http://www.tmaxsoft.com/xml/ns/jeus" version="8.0">
     <production-mode>true</production-mode>
     <id>20180918</id>
-	<admin-server-name>%SERVERNAME%</admin-server-name>
+	<admin-server-name>1789ca2eae04</admin-server-name>
     <security-manager>
         <default-application-domain>SYSTEM_DOMAIN</default-application-domain>
         <security-domains>
@@ -11,10 +11,11 @@
             </security-domain>
         </security-domains>
     </security-manager>
-    <domain-log-home>logs</domain-log-home>
+    <enable-webadmin>false</enable-webadmin>
+    <domain-log-home>/home/tmax/jeus8/logs</domain-log-home>
     <servers>
         <server>
-            <name>%SERVERNAME%</name>
+            <name>1789ca2eae04</name>
             <jvm-config>
                 <jvm-option>-Xms1024m -Xmx1024m</jvm-option>
             </jvm-config>
@@ -23,13 +24,13 @@
                 <base>base</base>
                 <listener>
                     <name>base</name>
-                    <listen-port>%BASE_PORT%</listen-port>
-                    <listen-address>%BASE_ADDRESS%</listen-address>
+                    <listen-port>9736</listen-port>
+                    <listen-address>0.0.0.0</listen-address>
                 </listener>
                 <listener>
                     <name>http-server</name>
-                    <listen-port>%HTTP_PORT%</listen-port>
-                    <listen-address>%BASE_ADDRESS%</listen-address>
+                    <listen-port>8080</listen-port>
+                    <listen-address>0.0.0.0</listen-address>
                     <keep-alive-timeout>600000</keep-alive-timeout>
                 </listener>
             </listeners>
@@ -50,8 +51,8 @@
                         <name>http</name>
                         <server-listener-ref>http-server</server-listener-ref>
                         <thread-pool>
-                            <min>%HTTP_THREAD_MIN%</min>
-                            <max>%HTTP_THREAD_MAX%</max>
+                            <min>10</min>
+                            <max>20</max>
                         </thread-pool>
                     </http-listener>
                 </web-connections>
@@ -100,17 +101,17 @@
     </servers>
     <deployed-applications>
         <deployed-application>
-            <id>%APP_NAME_1%</id>
-            <path>%APP_DIR%/%APPLICATION_PATH_1%</path>
-            <type>%APP_TYPE_1%</type>
+            <id>proobject-runtime</id>
+            <path>/home/tmax/proobject7/engine/proobject-runtime.war</path>
+            <type>WAR</type>
             <target-all-servers>true</target-all-servers>
             <classloading>ISOLATED</classloading>
             <use-fast-deploy>false</use-fast-deploy>
             <keep-generated>false</keep-generated>
             <shared>false</shared>
-            <node-java-context>%NODE_JAVA_1%</node-java-context>
+            <node-java-context>true</node-java-context>
         </deployed-application>
-	<deployed-application>
+        <deployed-application>
             <id>simple</id>
             <path>/home/tmax/app/simple.war</path>
             <type>WAR</type>
