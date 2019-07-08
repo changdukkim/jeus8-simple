@@ -122,7 +122,7 @@
             <backup-unit-size>50</backup-unit-size>
             <backup-queue-size>20</backup-queue-size>
             <ignore-flow-control>false</ignore-flow-control>
-            <prevent-migration>false</prevent-migration>
+            <prevent-migration>true</prevent-migration>
             <failover-delay>600</failover-delay>
             <restart-delay>600</restart-delay>
             <passivation>
