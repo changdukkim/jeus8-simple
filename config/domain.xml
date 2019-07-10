@@ -123,8 +123,8 @@
             <backup-queue-size>20</backup-queue-size>
             <ignore-flow-control>false</ignore-flow-control>
             <prevent-migration>false</prevent-migration>
-            <failover-delay>5</failover-delay>
-            <restart-delay>5</restart-delay>
+            <failover-delay>0</failover-delay>
+            <restart-delay>0</restart-delay>
             <passivation>
                 <trigger>
                     <timeout>-1</timeout>
