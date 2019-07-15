@@ -8,4 +8,6 @@ COPY lib/jext /home/tmax/jeus8/lib/jext
 #COPY config/env.sh /home/tmax/script/
 #COPY lib/*.jar /home/tmax/jeus8/domains/domain1/lib/application/
 
+COPY check_process.sh /home/tmax/jeus8/bin/
+
 EXPOSE 8080
