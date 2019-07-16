@@ -139,6 +139,7 @@
         </common-cluster-config>
     </session-cluster>
     <deployed-applications>
+	    <!--
         <deployed-application>
             <id>%APP_NAME_1%</id>
             <path>%APP_DIR%/%APPLICATION_PATH_1%</path>
@@ -150,6 +151,7 @@
             <shared>false</shared>
             <node-java-context>%NODE_JAVA_1%</node-java-context>
         </deployed-application>
+-->
 	<deployed-application>
             <id>simple</id>
             <path>/home/tmax/app/simple.war</path>
