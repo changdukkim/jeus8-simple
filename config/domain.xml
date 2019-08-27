@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><domain xmlns="http://www.tmaxsoft.com/xml/ns/jeus" version="7.0">
+d<?xml version="1.0" encoding="UTF-8"?><domain xmlns="http://www.tmaxsoft.com/xml/ns/jeus" version="7.0">
    <description>append elastic</description>
    <production-mode>false</production-mode>
    <id>632432013</id>
@@ -705,7 +705,7 @@
    <deployed-applications>
       <deployed-application>
          <id>ROOT</id>
-         <path>/home/tmax/jeus7/Apps/simple.war</path>
+         <path>/home/tmax/jeus7/apps/simple.war</path>
          <type>WAR</type>
          <targets>
             <server>
