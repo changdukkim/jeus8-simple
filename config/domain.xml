@@ -704,9 +704,9 @@
    </servers>
    <deployed-applications>
       <deployed-application>
-         <id>examples</id>
-         <path>/home/tmax/jeus7/samples/examples.ear</path>
-         <type>EAR</type>
+         <id>simples</id>
+         <path>/home/tmax/jeus7/apps/simple.war</path>
+         <type>WAR</type>
          <targets>
             <server>
                <name>server1</name>
