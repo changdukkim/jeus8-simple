@@ -704,7 +704,7 @@
    </servers>
    <deployed-applications>
       <deployed-application>
-         <id>ROOT</id>
+         <id>simple</id>
          <path>/home/tmax/jeus7/apps/simple.war</path>
          <type>WAR</type>
          <targets>
@@ -714,8 +714,8 @@
          </targets>
          <options>
             <classloading>ISOLATED</classloading>
-            <fast-deploy>false</fast-deploy>
-            <keep-generated>false</keep-generated>
+            <fast-deploy>true</fast-deploy>
+            <keep-generated>true</keep-generated>
             <shared>false</shared>
             <context-path>/</context-path>
          </options>
