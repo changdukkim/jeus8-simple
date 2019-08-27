@@ -495,7 +495,7 @@ d<?xml version="1.0" encoding="UTF-8"?><domain xmlns="http://www.tmaxsoft.com/xm
                   <registration-id>MyGroup</registration-id>
                   <network-address>
                      <port>9900</port>
-                     <ip-address>192.168.14.198</ip-address>
+                     <ip-address>webtob-reverseproxy-example.test1.svc.cluster.local</ip-address>
                   </network-address>
                   <use-nio>false</use-nio>
                   <thread-pool>
