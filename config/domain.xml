@@ -402,11 +402,11 @@
          </listeners>
          <jvm-config>
             <jvm-option>-Xmx1024m -XX:MaxPermSize=128m</jvm-option>
-            <jvm-option>-javaagent:/home/elastic-apm-agent-1.8.0.jar</jvm-option>
+            <!--jvm-option>-javaagent:/home/elastic-apm-agent-1.8.0.jar</jvm-option>
             <jvm-option>-Delastic.apm.service_name=my-cool-service</jvm-option>
             <jvm-option>-Delastic.apm.application_packages=org.example,org.another.example</jvm-option>
             <jvm-option>-Delastic.apm.server_urls=http://192.168.14.197:8200</jvm-option>
-            <jvm-option>-Delastic.apm.instrument=true</jvm-option>
+            <jvm-option>-Delastic.apm.instrument=true</jvm-option>-->
          </jvm-config>
          <system-logging>
             <level>INFO</level>
